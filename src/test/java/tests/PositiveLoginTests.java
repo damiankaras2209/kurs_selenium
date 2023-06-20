@@ -24,8 +24,8 @@ public class PositiveLoginTests extends TestBase {
         boolean isBannerAfterLoginDisplayed = landingPage
             .clickOnEnterStoreLink()
             .clickOnSignInLink()
-            .typeIntoUserNameField("j2ee")
-            .typeIntoPasswordField("j2ee")
+            .typeIntoUserNameField(System.getenv("Username"))
+            .typeIntoPasswordField(System.getenv("Password"))
             .clickOnLoginButton()
             .isBannerAfterLoginDisplayed();
 

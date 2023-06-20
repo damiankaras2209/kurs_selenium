@@ -15,7 +15,6 @@ public class BrowserFactory {
                 System.setProperty("webdriver.chrome.driver", LocalWebDriverProperties.getChromeWebDriverLocation());
                 return new ChromeDriver();
             case FIREFOX:
-
                 System.setProperty("webdriver.gecko.driver", LocalWebDriverProperties.getFirefoxWebDriverLocation());
                 return new FirefoxDriver();
             case IE:
